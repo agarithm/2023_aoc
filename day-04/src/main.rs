@@ -51,12 +51,12 @@ fn main() {
         for c in 0..card.count {
             //Check if card has a winning number
             let mut j = i+1;
-            for num in card.my_numbers.iter() {
-                if num == &0 {
+            for win_num in card.winning_nums.iter() {
+                if win_num == &0 {
                     break;
                 }
-                for win_num in card.winning_nums.iter() {
-                    if win_num == &0 {
+                for num in card.my_numbers.iter() {
+                    if num == &0 {
                         break;
                     }
                     if num == win_num {
