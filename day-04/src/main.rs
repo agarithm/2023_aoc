@@ -8,7 +8,7 @@ struct Card {
 }
 
 fn main() {
-    //hashmap of cards
+    //array of cards
     let mut cards: [Card; 1000] = [Card{winning_nums: [0; 10], my_numbers: [0; 30], count: 0, points: 0}; 1000];
 
     // open input file
